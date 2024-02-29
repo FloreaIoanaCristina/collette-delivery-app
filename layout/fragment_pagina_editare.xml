@@ -1,0 +1,284 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:theme="@style/Theme.Home.Background"
+tools:context=".ui.main.paginaEditare" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:background="@color/malibu_blue"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewProfilEditare"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/poza_profil_generica" />
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/textViewSchimbaPozaProfilEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Schimba Poza"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:theme="@style/Theme.Home.Text" />
+
+        <TextView
+            android:id="@+id/textViewStergePozaProfilEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sterge Poza "
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:theme="@style/Theme.Home.Text" />
+    </LinearLayout>
+<EditText
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="9dp"
+    android:editable="false"
+    android:background="@color/white"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+<TextView
+    android:id="@+id/textViewInfo"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.Home.Text"
+    android:layout_height="wrap_content"
+    android:text=" Informatii personale:"
+    android:layout_marginBottom="5dp"
+    android:textSize="16dp"
+    android:layout_gravity="center_vertical"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewTelefonContEditare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=" Nr telefon:"
+        android:textSize="16dp"
+        android:ems="8"
+        android:theme="@style/Theme.Home.Text" />
+
+    <EditText
+        android:id="@+id/editTextTelefonInfoEditare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_edit_text"
+        android:ems="10"
+        android:inputType="phone"
+        android:padding="6dp"
+        android:textSize="16dp"
+        android:theme="@style/Theme.Home.Text" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewJudetContEditare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Home.Text"
+        android:ems="8"
+        android:text=" Judet:"
+        android:textSize="16dp"
+        android:layout_gravity="center_vertical"/>
+
+    <Spinner
+        android:id="@+id/spinnerJudetEditare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_edit_text"
+        android:entries="@array/judete"
+        android:padding="8dp"
+        android:theme="@style/Theme.Home.Text" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewLocalitateContEditare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=" Localitate/Sector:"
+        android:textSize="16dp"
+        android:ems="8"
+        android:theme="@style/Theme.Home.Text" />
+
+    <EditText
+        android:id="@+id/editTextLocalitateInfoEditare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Home.Text"
+        android:inputType="text"
+        android:layout_weight="1"
+        android:ems="10"
+        android:padding="6dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewAdresaContEditare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Home.Text"
+        android:text=" Adresa:"
+        android:ems="8"
+        android:textSize="16dp"
+        android:layout_gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/editTextAdresaInfoEditare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:theme="@style/Theme.Home.Text"
+        android:inputType="text"
+        android:ems="10"
+        android:padding="6dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewPostalEditare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Home.Text"
+        android:text=" Cod postal:"
+        android:ems="8"
+        android:textSize="16dp"
+        android:layout_gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/editTextCodPostalInfoEditare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:theme="@style/Theme.Home.Text"
+        android:inputType="number"
+        android:ems="10"
+        android:padding="6dp"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp">
+
+    <Button
+        android:id="@+id/buttonAnuleazaModificari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/malibu_blue"
+        android:textColor="@color/white"
+        android:text="Renunta la modificari"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/buttonSalveazaModificari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/malibu_blue"
+        android:text="Salveaza modificari"
+        android:layout_margin="5dp"
+        />
+
+
+</LinearLayout>
+
+  <TextView
+      android:id="@+id/textViewInfoCarduri"
+      android:layout_width="match_parent"
+      android:theme="@style/Theme.Home.Text"
+      android:layout_height="wrap_content"
+      android:text=" Carduri:"
+      android:textStyle="bold"
+      android:layout_marginBottom="5dp"
+      android:textSize="16dp"
+      android:layout_gravity="center_vertical"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCarduriEditare"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

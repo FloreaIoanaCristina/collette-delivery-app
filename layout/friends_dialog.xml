@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:theme="@style/Theme.Signup.Background.Color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:theme="@style/Theme.Home.Icon" />
+
+        <TextView
+            android:id="@+id/textViewTitleFren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:theme="@style/Theme.Others.Text"
+            android:text="Introduceti UID-ul utilizatorului:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewMsgFren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:theme="@style/Theme.Others.Text"
+        android:layout_marginBottom="10dp"
+        android:text="Solicitati utilizatorului sa va trimita codul unic personal (UID) regasit pe pagina de cont" />
+
+    <EditText
+        android:id="@+id/editTextUIDFren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="15"
+        android:padding="8dp"
+        android:theme="@style/Theme.Others.Text"
+        android:hint="UID "
+        android:textColorHint="@color/griul_pe_care_il_uit_mereu"
+        android:background="@drawable/custom_edit_text"
+        android:inputType="text"
+        />
+    <Button android:id="@+id/dialog_button_pozitivFren"
+        android:layout_height="wrap_content"
+        android:text="TRIMITE CERERE"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/malibu_blue"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_width="match_parent" />
+
+
+
+</LinearLayout>

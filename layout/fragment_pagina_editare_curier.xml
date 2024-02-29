@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Home.Background"
+    tools:context=".ui.main.paginaEditareCurier">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/malibu_blue"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewProfilCurierEditare"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/poza_profil_generica" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSchimbaPozaProfilCurierEditare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schimba Poza"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:theme="@style/Theme.Home.Text"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginBottom="5dp"
+        android:editable="false"
+        android:background="@color/white"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewTelefonContCurierEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" Nr telefon:"
+            android:textSize="16dp"
+            android:ems="8"
+            android:theme="@style/Theme.Home.Text" />
+
+        <EditText
+            android:id="@+id/editTextTelefonInfoCurierEditare"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textSize="16dp"
+            android:theme="@style/Theme.Home.Text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Home.Text"
+        android:layout_height="wrap_content"
+        android:text=" Informatii masina:"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewMarcaMasinaCurierEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" Marca:"
+            android:textSize="16dp"
+            android:ems="8"
+            android:theme="@style/Theme.Home.Text" />
+
+        <EditText
+            android:id="@+id/editTextMarcaMasinaCurierEditare"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:inputType="text"
+            android:layout_weight="1"
+            android:ems="10"
+            android:padding="6dp"
+            android:background="@drawable/custom_edit_text"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewModelMasinaCurierEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:text=" Model:"
+            android:ems="8"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/editTextModelMasinaCurierEditare"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Theme.Home.Text"
+            android:inputType="text"
+            android:ems="10"
+            android:padding="6dp"
+            android:background="@drawable/custom_edit_text"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewNrInmatriculareMasinaCurierEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:text=" Numar inmatriculare:"
+            android:ems="8"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/editTextNrInmatriculareMasinaCurierEditare"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Theme.Home.Text"
+            android:inputType="text"
+            android:ems="10"
+            android:padding="6dp"
+            android:background="@drawable/custom_edit_text"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewCuloareMasinaCurierEditare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:layout_weight="1"
+            android:ems="8"
+            android:text=" Culoare:"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"/>
+
+        <Spinner
+            android:id="@+id/spinnerCuloareMasinaCurierEditare"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edit_text"
+            android:entries="@array/culori"
+            android:padding="6dp"
+            android:theme="@style/Theme.Home.Text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/buttonAnuleazaModificariCurier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/malibu_blue"
+            android:textColor="@color/white"
+            android:text="Renunta la modificari"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buttonSalveazaModificariCurier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/malibu_blue"
+            android:text="Salveaza modificari"
+            android:layout_margin="5dp"
+            />
+
+
+    </LinearLayout>
+    <TextView
+            android:id="@+id/textViewInfoCarduriCurier"
+            android:layout_width="match_parent"
+            android:theme="@style/Theme.Home.Text"
+            android:layout_height="wrap_content"
+            android:text=" Carduri:"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCarduriEditareCurier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

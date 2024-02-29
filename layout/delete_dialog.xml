@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Signup.Background.Color"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitluAtentie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:theme="@style/Theme.Others.Text"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="ATENTIE: Stergerea contului este permanenta!" />
+    <TextView
+        android:id="@+id/textViewStergere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:theme="@style/Theme.Others.Text"
+        android:layout_marginBottom="10dp"
+        android:text="\nUrmeaza sa va stergeti contul definitiv.\nDoriti sa continuati?" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button android:id="@+id/delete_button_negativ"
+            android:layout_height="wrap_content"
+            android:text="NU"
+            android:layout_gravity="start"
+            android:theme="@style/Theme.Others.Button"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_width="wrap_content" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+
+        <Button android:id="@+id/delete_button_pozitiv"
+            android:layout_height="wrap_content"
+            android:text="DA"
+            android:theme="@style/Theme.Others.Button"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_width="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

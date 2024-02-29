@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Home.Background">
+
+        <ImageView
+            android:id="@+id/imageViewAcasa"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/home_statistici" />
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:editable="false"
+        android:background="@color/white"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <TextView
+               android:id="@+id/tvFaraDate"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:background="@color/forest_green"
+               android:textColor="@color/happy_yellow"
+               android:textSize="25dp"
+               android:textAlignment="center"
+               android:paddingTop="200dp"
+               android:paddingBottom="200dp"
+               android:text="Nu exista suficiente date pentru a realiza statistici"
+               android:visibility="gone"></TextView>
+
+
+    <TextView
+        android:id="@+id/tvBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/happy_yellow"
+        android:text="Grafic cu bare reprezentand profitul zilnic realizat prin Collette"
+        android:background="@color/forest_green">
+    </TextView>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:backgroundTint="@color/forest_green"
+            ></com.github.mikephil.charting.charts.BarChart>
+            <TextView
+                android:id="@+id/tvPie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textColor="@color/happy_yellow"
+                android:text="Grafic de tip placinta reprezentand procentajul tipurilor de plati in totalul comenzilor"
+                android:background="@color/forest_green"/>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:backgroundTint="@color/forest_green"
+            ></com.github.mikephil.charting.charts.PieChart>
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/butonDescarcaCSV"
+          android:layout_width="match_parent"
+          android:textColor="@color/white"
+          android:layout_height="50dp"
+          android:layout_weight="1"
+          android:text="DESCARCA CSV COMENZI"
+          android:background="@color/malibu_blue"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

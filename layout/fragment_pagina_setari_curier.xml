@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Home.Background"
+    tools:context=".ui.main.paginaSetariCurier">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTermeniSiConditii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termeni"
+            android:textColor="@color/malibu_blue"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/textViewAjutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ajutor"
+            android:textColor="@color/malibu_blue"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchNotificariCurier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Notificari"
+            android:theme="@style/Theme.Home.Text"
+            android:checked="true"
+            android:background="@drawable/custom_edit_text"
+            android:thumbTint="@drawable/switch_color_selector"
+            android:trackTint="@drawable/switch_color_selector"
+            />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchNightModeCurier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Mod de noapte"
+            android:theme="@style/Theme.Home.Text"
+            android:checked="false"
+            android:background="@drawable/custom_edit_text"
+            android:thumbTint="@drawable/switch_color_selector"
+            android:trackTint="@drawable/switch_color_selector"
+            />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAdaugaCardCurier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:textColor="@color/white"
+            android:text="Adaugă Card Încasări "
+            android:backgroundTint="@color/malibu_blue"/>
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <FrameLayout
+        android:id="@+id/fragmentCardCurier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/custom_edit_text"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+        </LinearLayout></ScrollView>
+
+</LinearLayout>

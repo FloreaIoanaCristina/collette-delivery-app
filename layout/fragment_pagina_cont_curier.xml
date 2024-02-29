@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Home.Background"
+    tools:context=".ui.main.paginaContCurier" >
+    <FrameLayout
+        android:id="@+id/fragmentEditareCurier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/malibu_blue">
+
+        <ImageView
+            android:id="@+id/imageViewProfilCurier"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/poza_profil_generica" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewNumCurier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="TextView"
+        android:theme="@style/Theme.Home.Text"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:editable="false"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:paddingLeft="5dp"
+            android:ems="5"
+            android:text="Rating:"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numStars="5"
+            android:colorControlNormal="@color/white"
+            android:progressTint="@color/happy_yellow"
+            android:rating="5" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTelefonCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:paddingLeft="5dp"
+            android:theme="@style/Theme.Home.Text"
+            android:text="Nr telefon:" />
+
+        <TextView
+            android:id="@+id/textViewTelefonInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewMasina"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:theme="@style/Theme.Cont.Car" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Home.Text"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:text="Informatii Masina:" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Marca:"
+            android:ems="9"
+            android:theme="@style/Theme.Home.Text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewBrandInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:textSize="16dp"
+            android:ems="9"
+            android:text="Model:" />
+
+        <TextView
+            android:id="@+id/textViewModelInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewNrInmatriculare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="9"
+            android:textSize="16dp"
+            android:theme="@style/Theme.Home.Text"
+            android:text="Numar inmatriculare:" />
+
+        <TextView
+            android:id="@+id/textViewNrInmatriculareInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Home.Text"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewCuloare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="9"
+            android:textSize="16dp"
+            android:theme="@style/Theme.Home.Text"
+            android:text="Culoare:" />
+
+        <TextView
+            android:id="@+id/textViewCodCuloareInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:theme="@style/Theme.Home.Text"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEditeazaProfilCurier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/malibu_blue"
+            android:textColor="@color/white"
+            android:text="Editeaza Profil"
+            />
+
+        <Button
+            android:id="@+id/buttonSignOutCurier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/malibu_blue"
+            android:text="Sign out"
+
+            />
+
+        <Button
+            android:id="@+id/buttonStergeContCurier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/malibu_blue"
+            android:text="Sterge Cont"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

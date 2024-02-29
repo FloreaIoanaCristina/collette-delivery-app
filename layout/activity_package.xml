@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Others.Background"
+    tools:context=".PackageActivity">
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="271dp"
+                    android:layout_height="105dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/resource_package" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFormular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Formular Comanda"
+                    android:textColor="@color/cute_pink"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Informații colet" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Numar colete" />
+
+                <EditText
+                    android:id="@+id/editTextNrColete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Inaltime totala(cm)" />
+
+                <EditText
+                    android:id="@+id/editTextInaltimeTotala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="numberDecimal|numberSigned" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Lungime totala(cm)" />
+
+                <EditText
+                    android:id="@+id/editTextLungimeTotala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="numberDecimal|numberSigned" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Latime totala(cm)" />
+
+                <EditText
+                    android:id="@+id/editTextLatimeTotala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="numberDecimal|numberSigned" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Greutate totala(kg)" />
+
+                <EditText
+                    android:id="@+id/editTextGreutateTotala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="numberDecimal|numberSigned"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxFragil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/cute_pink"
+                    android:text="Fragil" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Informații Expeditor" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Nume Expeditor" />
+
+                <EditText
+                    android:id="@+id/editTextNumeExpeditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="textPersonName"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewNrTelExp"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Telefon" />
+
+                <EditText
+                    android:id="@+id/nrTelefonExpeditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="phone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Judet" />
+
+                <Spinner
+                    android:id="@+id/spinnerJudetExpeditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:entries="@array/judete"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Oras / Sector" />
+
+                <EditText
+                    android:id="@+id/editTextOrasExpeditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="textPersonName"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Adresa" />
+
+                <EditText
+                    android:id="@+id/editTextAdresaExpeditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Informații Destinatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonTrimitePrieten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:theme="@style/Theme.Others.Button"
+                    android:text="Trimite unui prieten" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Nume Destinatar" />
+                <EditText
+                    android:id="@+id/editTextNumeDestinatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewNrTelDest"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Telefon" />
+
+                <EditText
+                    android:id="@+id/nrTelefonDestinatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="phone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Judet" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerJudetDestinatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cute_pink"
+                    android:entries="@array/judete"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Oras / Sector" />
+
+                <EditText
+                    android:id="@+id/editTextOrasDestinatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:backgroundTint="@color/cute_pink"
+                    android:textCursorDrawable ="@color/cute_pink"
+                    android:inputType="textPersonName"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="8"
+                    android:gravity="center_vertical"
+                    android:text="Adresa" />
+
+                <EditText
+                    android:id="@+id/editTextAdresaDestinatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/cute_pink"
+                    android:ems="8"
+                    android:textCursorDrawable="@color/cute_pink" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Informatii plata" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioButtonCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Plata Cash"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:buttonTint="@color/cute_pink"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Plata Card"
+                    android:buttonTint="@color/cute_pink"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxTermeni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/cute_pink"
+                    android:text="Accept Termenii si Conditiile si imi asum responsabilitate pentru nerespectarea lor" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonTrimiteComanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:theme="@style/Theme.Others.Button"
+                android:gravity="center"
+                android:text="Trimite Comanda" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Signup.Background.Color"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/Theme.Others.Text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="" />
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:progressTint="@color/happy_yellow"
+        android:progressBackgroundTint="@color/griul_pe_care_il_uit_mereu"
+        android:id="@+id/dialog_ratingbar"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:isIndicator="false"/>
+    <TextView
+        android:id="@+id/textViewFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:theme="@style/Theme.Others.Text"
+        android:layout_marginBottom="10dp"
+        android:text="Daca doriti puteti lasa un comentariu cu privirea experientei dumneavoastra cu curierul nostru:" />
+
+    <EditText
+        android:id="@+id/editTextComentariu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="15"
+        android:padding="8dp"
+        android:theme="@style/Theme.Others.Text"
+        android:hint="Comentariul tau aici..."
+        android:textColorHint="@color/griul_pe_care_il_uit_mereu"
+        android:background="@drawable/custom_edit_text"
+        android:inputType="textMultiLine|textNoSuggestions"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <Button android:id="@+id/dialog_button_negativ"
+        android:layout_height="wrap_content"
+        android:text="RENUNTA"
+        android:layout_gravity="start"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/malibu_blue"
+        android:layout_width="wrap_content" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+
+    <Button android:id="@+id/dialog_button_pozitiv"
+        android:layout_height="wrap_content"
+        android:text="TRIMITE"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/malibu_blue"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_width="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

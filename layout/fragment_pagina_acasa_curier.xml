@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.Home.Background"
+    tools:context=".ui.main.paginaAcasaCurier">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewAcasa"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/home_comenzi" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:editable="false"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/TextNotificari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/Theme.Home.Background"
+            android:textColor="@color/malibu_blue"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+
+            android:text="Permite notificarile din setari pentru a fi anuntat cand apare o potentiala comanda noua" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewComenzi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>
